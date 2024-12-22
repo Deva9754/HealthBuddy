@@ -1,3 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+* {
+  font-family: outfit;
+}
+
+.active hr {
+  @apply block;
+}
+
+::-webkit-scrollbar {
+  @apply hidden;
+}
+
+/* Shimmer animation */
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+/* Shimmer container */
+
+.shimmer {
+  position: relative;
+  overflow: hidden;
+  background: #f0f0f0;
+  /* Light gray background */
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  /* Gray gradient */
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite ease-in-out;
+  /* Smooth shimmer animation */
+  display: inline-block;
+  /* Ensures the container only takes up the space it needs */
+}
+
+/* Shimmer image block */
+
+.shimmer-image {
+  width: 100%;
+  /* Ensure image fills container */
+  height: 200px;
+  /* Match the height of the actual image */
+  background: #e0e0e0;
+  border-radius: 8px;
+}
+
+/* Shimmer text block */
+
+.shimmer-text {
+  width: 100%;
+  height: 20px;
+  margin: 5px 0;
+  background: #e0e0e0;
+  border-radius: 4px;
+}
+
+/* Specific shimmer text blocks for name, speciality, etc. */
+
+.shimmer-name {
+  width: 60%;
+}
+
+.shimmer-speciality {
+  width: 40%;
+}
+
+.shimmer-available {
+  width: 30%;
+}
+@media (max-width: 740px) {
+  .active p {
+    @apply text-white bg-primary;
+  }
+}
