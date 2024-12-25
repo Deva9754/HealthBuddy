@@ -5,7 +5,7 @@ import { assets } from "../assets/assets";
 import RelatedDoctors from "../components/RelatedDoctors";
 const Appointments = () => {
   const { docId } = useParams();
-  const { doctors, currencySymbol } = useContext(AppContext);
+  const { doctors } = useContext(AppContext);
   const daysOfWeek = ["sun", "Mon", "Tue", "wed", "Thu", "Fri", "Sat"];
   const [docInfo, setDocInfo] = useState(null);
   const [docSlots, setDocSlots] = useState([]);
@@ -110,10 +110,7 @@ const Appointments = () => {
             <p className=" text-gray-500 font-medium mt-4">
               {" "}
               Appointment fee:{" "}
-              <span className=" text-gray-600">
-                {currencySymbol}
-                {docInfo.fees}
-              </span>
+              <span className=" text-gray-600">{docInfo.fees}</span>
             </p>
           </div>
         </div>
@@ -162,7 +159,6 @@ const Appointments = () => {
                   date: docSlots[slotIndex][0].dateTime,
                   time: slotTime,
                   fees: docInfo.fees,
-                  currencySymbol,
                 },
               })
             }
