@@ -51,6 +51,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import AppointmentConfirmation from "./pages/AppointmentConfirmation";
 import PaymentConfirmation from "./pages/PaymentConfirmation";
+import RazorpayButton from "./components/RazorpayButton";
 
 function App() {
   const { token } = useContext(AppContext);
@@ -84,6 +85,7 @@ function App() {
             path="/paymentConfirmation"
             element={<PaymentConfirmation />}
           />
+          <Route path="/RazorpayButton" element={<RazorpayButton />} />
         </Routes>
         <Footer />
       </div>
