@@ -7,7 +7,7 @@ import { AppContext } from "../context/AppContext";
 const AppointmentConfirmation = () => {
   const location = useLocation();
   const navigate = useNavigate();
-  const { addAppointment } = useContext(AppContext); // Access the addAppointment function from the context
+  const { addAppointment } = useContext(AppContext); 
 
   const { doctor, date, time, fees, currencySymbol } = location.state || {};
 
