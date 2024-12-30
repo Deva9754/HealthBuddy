@@ -8,11 +8,11 @@ const PaymentConfirmation = () => {
   const [paymentError, setPaymentError] = useState(false);
 
   useEffect(() => {
-    window.scrollTo(0, 0); // Scroll to top of the page
+    window.scrollTo(0, 0); 
   }, []);
 
   useEffect(() => {
-    // Extract the appointment data passed from the previous page
+  
     if (location.state && location.state.appointment) {
       setAppointment(location.state.appointment);
       console.log("Received appointment data:", location.state.appointment);
@@ -23,7 +23,7 @@ const PaymentConfirmation = () => {
 
   const handlePayment = () => {
     if (appointment) {
-      // Proceed with Razorpay payment gateway integration
+      
       console.log("Proceeding to payment with amount:", appointment.fees);
 
       const options = {
