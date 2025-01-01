@@ -1,24 +1,3 @@
-//   return (
-//     <div>
-//       <h2>Pay ₹{amount}</h2>
-//       <button
-//         onClick={handlePayment}
-//         disabled={isProcessing}
-//         className="py-2 px-6 border rounded text-white bg-blue-500 hover:bg-blue-600"
-//       >
-//         {isProcessing ? "Processing..." : "Pay with Razorpay"}
-//       </button>
-//     </div>
-//   );
-// };
-
-// // PropTypes validation for amount
-// RazorpayButton.propTypes = {
-//   amount: PropTypes.number.isRequired,
-// };
-
-// export default RazorpayButton;
-
 import PropTypes from "prop-types";
 import { useState } from "react";
 
