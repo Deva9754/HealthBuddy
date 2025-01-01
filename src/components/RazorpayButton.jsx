@@ -1,36 +1,3 @@
-// import PropTypes from "prop-types"; // Import PropTypes
-// import { useState } from "react";
-
-// const RazorpayButton = ({ amount }) => {
-//   const [isProcessing, setIsProcessing] = useState(false);
-
-//   if (amount === undefined || amount <= 0) {
-//     return <p>Error: Invalid amount</p>;
-//   }
-
-//   const handlePayment = async () => {
-//     setIsProcessing(true);
-//     console.log("Handling payment...");
-
-//     try {
-//       // Step 1: Create a payment order from your server
-//       const response = await fetch("http://localhost:5000/api/createOrder", {
-//         method: "POST",
-//         headers: {
-//           "Content-Type": "application/json",
-//         },
-//         body: JSON.stringify({ amount }), // Send the dynamic amount
-//       });
-
-//       const orderData = await response.json();
-//       console.log("Order Data:", orderData); // Log the response from the server
-
-//       if (!orderData || !orderData.id) {
-//         alert("Error creating order.");
-//         setIsProcessing(false);
-//         return;
-//       }
-
 //       // Step 2: Setup Razorpay options
 //       const options = {
 //         key: "rzp_test_nsBoHTjeS3qpls", // Your Razorpay API Key
