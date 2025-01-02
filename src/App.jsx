@@ -7,9 +7,6 @@
 // import Login from "./pages/Login";
 // import MyAppointment from "./pages/MyAppointment";
 // import MyProfile from "./pages/MyProfile";
-// import Appointments from "./pages/Appointments";
-// import Navbar from "./components/Navbar";
-// import Footer from "./components/Footer";
 
 // function App() {
 //   return (
