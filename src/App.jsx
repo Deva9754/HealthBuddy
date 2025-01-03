@@ -6,7 +6,6 @@
 // import Home from "./pages/Home";
 // import Login from "./pages/Login";
 // import MyAppointment from "./pages/MyAppointment";
-// import MyProfile from "./pages/MyProfile";
 
 // function App() {
 //   return (
