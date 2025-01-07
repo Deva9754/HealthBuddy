@@ -7,12 +7,6 @@
 // import Login from "./pages/Login";
 // import MyAppointment from "./pages/MyAppointment";
 
-// function App() {
-//   return (
-//
-//   );
-// }
-
 // export default App;
 
 import "./App.css";
