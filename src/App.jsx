@@ -7,8 +7,6 @@
 // import Login from "./pages/Login";
 // import MyAppointment from "./pages/MyAppointment";
 
-// export default App;
-
 import "./App.css";
 import { Route, Routes, useNavigate } from "react-router-dom";
 import { useContext, useEffect } from "react";
