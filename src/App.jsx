@@ -4,7 +4,6 @@
 // import Contact from "./pages/Contact";
 // import Doctors from "./pages/Doctors";
 // import Home from "./pages/Home";
-// import Login from "./pages/Login";
 
 import "./App.css";
 import { Route, Routes, useNavigate } from "react-router-dom";
