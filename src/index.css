@@ -45,7 +45,6 @@
 
 .shimmer-image {
     width: 100%;
-    /* Ensure image fills container */
     height: 200px;
     /* Match the height of the actual image */
     background: #e0e0e0;
