@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-// import { doctors } from "../assets/assets";
+ import { doctors } from "../assets/assets";
 
 import { useContext } from "react";
 import { AppContext } from "../context/AppContext";
