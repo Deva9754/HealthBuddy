@@ -38,7 +38,6 @@
     /* Gray gradient */
     background-size: 200% 100%;
     animation: shimmer 1.5s infinite ease-in-out;
-    /* Smooth shimmer animation */
     display: inline-block;
 }
 
