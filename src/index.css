@@ -40,7 +40,6 @@
     animation: shimmer 1.5s infinite ease-in-out;
     /* Smooth shimmer animation */
     display: inline-block;
-    /* Ensures the container only takes up the space it needs */
 }
 
 .shimmer-image {
