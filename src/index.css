@@ -14,9 +14,6 @@
     @apply hidden;
 }
 
-
-/* Shimmer animation */
-
 @keyframes shimmer {
     0% {
         background-position: -200% 0;
