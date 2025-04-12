@@ -87,9 +87,6 @@
     width: 100%;
 }
 
-
-/* Loader Styles */
-
 .loader {
     border-top-color: transparent;
     animation: spin 1s linear infinite;
